@@ -1,0 +1,11 @@
+{
+  "name": "homyfood",
+  "version": "1.0.0",
+  "description": "site restaurants",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
