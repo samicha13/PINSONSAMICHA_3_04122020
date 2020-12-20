@@ -9,4 +9,24 @@
     border-radius: 12vw 12vw 0 0;
     margin-top: -15vw;
     padding: 5vw;
+
+}
+.choice1, .choice2, .choice3, .choice4{
+background: white;
+    border-radius: 2vw;
+    line-height: 0vw;
+margin-bottom: 5vw;}
+
+.detail
+{
+    margin-left: 4vw;
+}
+.detail__name__description__price{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: flex-end;
+    margin: 0;
+    right: 3vw;
+    top: 11vw;
 }

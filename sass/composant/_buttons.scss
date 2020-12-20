@@ -10,3 +10,22 @@
     font-size: 4vw;
     margin-right: 4vw;
 }
+
+.btn__order
+{
+    padding: 4vw 6vw 4vw 6vw;
+    border-radius: 6vw;
+    color: #fff;
+    border: none;
+    background: {image: linear-gradient(to bottom,$color-secondary,$color-primary);};
+    box-shadow: 0 2vw 2vw -2vw #000;
+    cursor: pointer;
+    margin-top: 2vw;
+    font-size: 5vw;
+    margin-left: 22vw;
+
+}
+
+.btn__order:hover, .btn__exploration:hover{
+    filter: brightness(1.2);
+    box-shadow: 0 1vw 3vw  black}

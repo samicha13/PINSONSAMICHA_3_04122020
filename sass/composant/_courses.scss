@@ -1,0 +1,11 @@
+
+.menu h4::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background: $color-tertiary;}
+
+    h4{
+        font-weight: normal;
+    }

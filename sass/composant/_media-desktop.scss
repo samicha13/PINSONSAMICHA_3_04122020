@@ -1,0 +1,243 @@
+//*-----page d'accueil---*//
+
+
+@media screen and (min-width:1024px) 
+{
+    header
+      {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 9vw;
+       padding-top:0vw;
+       padding-bottom:0vw;
+       width: 100%;
+      }
+
+      .place{
+          background-color: #eaeaea;
+          width: 100%;
+          height: 4vw;
+      }
+      .fa-map-marker-alt
+      {
+          padding-right: 1vw;
+      }
+.where
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+}
+
+     
+
+/*--exploration---*/
+
+
+
+.exploration{
+   
+background-color: #f6f6f6;
+height: 0;
+    padding: 5vw 5vw 15vw 5vw;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a c"
+                         "b c";
+    }
+
+.description__title
+{
+    grid-area: a;
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.description
+{
+    grid-area: b;
+    width: 100%;
+   
+    color: gray;
+    font-size: 1.5vw;
+}
+
+.btn__exploration{
+    grid-area: c;
+    width: 20vw;
+    font-size: 1.5vw;
+    padding: 1vw 1vw 1vw 1vw;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 10vw;
+}
+
+//----fonctionnement----//
+
+.stages{
+    margin-top: 4vw;
+}
+
+.title
+ {  font-size: 2vw;
+     margin-bottom: 0;
+     margin-top: 0;
+     margin-left: 1vw;
+    margin-top:2vw;}
+ 
+ 
+ 
+ .stage1, .stage2, .stage3
+ {
+   display: flex;
+     align-items: center;
+     background-color:$background-meal;
+     width: 20vw;
+     height: 4vw;
+     padding: 1vw 1vw 1vw 1vw;
+     border-radius: 3vw;
+     box-shadow: 0 2vw 3vw -1vw #00000045;
+     font-size: 1.3vw;  
+ }
+ .stage1:hover,.stage2:hover,.stage3:hover{
+   background: {image: linear-gradient(to right,$color-tertiary,$color-secondary,$color-primary) ;}
+    box-shadow: 0 1vw 3vw  black;
+ }
+ .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt
+ {
+     padding-left: 1vw;
+     padding-right: 1vw; 
+     color: gray;
+ }
+ 
+ .numbers{
+     margin-left: -2vw;
+     margin-top: 0;
+     margin-bottom: 0;
+     color: white;
+     background-color:$color-primary;
+     border-radius: 100%;
+     width: 3vw;
+     height: 2vw;
+     display: flex;
+     justify-content: center;
+     padding-top: 1vw;
+ }
+ 
+ //*---restaurants--*//
+
+ .title__2__place
+ {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4vw;
+    font-size: 2.5vw;
+
+ }
+ .restaurants__choices{
+     background-color: $background-meal;
+     margin-top:3vw;
+     padding-left: 2vw;
+     height: 35vw;
+    
+ }
+ .pictures
+      {
+          width: 20vw;
+          height: 16vw;
+border-radius: 1vw 1vw 0vw 0vw;
+background-size: cover;
+          }
+
+
+          .new
+          {
+              position: absolute;
+             margin-left: 12vw;
+              background-color:$color-tertiary;
+              color: $color-text-new;
+              padding:1vw 1vw 1vw 1vw;
+              border-radius: 5%;
+          }
+
+          .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
+            margin-left: 0vw;
+            background-color: white;
+            border-radius: 1vw 1vw 1vw 1vw;
+            width: 20vw;
+            height: 21vw;
+            line-height: 2vw;
+           
+        }
+
+        .palette__du__gout:hover,  .a__la__francaise:hover{
+            background: {image: linear-gradient(to left,$color-tertiary,$color-primary);}}
+            
+
+            .la__note__enchantee:hover,.le__delice:hover{
+                background: {image: linear-gradient(to right,$color-secondary,$color-tertiary);}}
+            
+            
+
+        .mention__place{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1vw;
+        }
+        .title__restaurant
+        {
+            margin-bottom: 0vw;
+            margin-top: 0;
+            font-size: 1vw;
+        }
+        a.link
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .text__position
+        {
+            margin-left: 3vw;
+        }
+      
+
+footer {
+    margin-top: 0;
+height: 15vw;}
+
+
+h3.title__footer
+{
+    display: flex;
+    justify-content: start;
+    padding-top:3vw;
+    padding-bottom: 2vw;
+}
+
+i.fas.fa-utensils
+ {
+     padding-right: 1vw;
+     
+ }
+ i.fas.fa-hands-helping
+ {
+     padding-right: 1vw;
+ }
+ a.contact
+ {
+     text-decoration: none;
+     color:$color-text-footer;
+     margin: 0 0 0 0;
+     
+ }
+
+//*----page restaurants----*
+
+
+
+
+
+
+
+}
