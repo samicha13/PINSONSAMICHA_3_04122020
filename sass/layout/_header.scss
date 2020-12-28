@@ -3,9 +3,9 @@ header
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 9vw;
-       padding-top:4vw;
-       padding-bottom:3vw;
+       height: 3rem;
+       padding-top:1rem;
+       padding-bottom:1rem;
        width: 100%;
       
     }
@@ -15,6 +15,6 @@ header
       .back
       {
           position: absolute;
-          left: 5vw;
-          top: 6vw;
+          left:1rem;
+          top: 1.7rem;
       }

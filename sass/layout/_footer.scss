@@ -4,13 +4,13 @@
  {
      
 background-color: $background-footer; 
-height: 50vw;
+height: 15rem;
  }
  h3.title__footer
  {
      font-family: "Shrikhand";
-     padding-top: 7vw;
-     padding-bottom: 4vw;
+     padding-top: 2rem;
+     padding-bottom: 1rem;
      margin: 0 0 0 0;
      color:$color-text-footer;
  }
@@ -18,23 +18,23 @@ height: 50vw;
  
  .footer__content
  {
-     margin-left: 7vw;
+     margin-left: 2rem;
     
  }
  .footer__service1,.footer__service2,.footer__service3,.footer__service4
  {
    color:$color-text-footer;  
    font-weight: normal;
-   padding-bottom: 2vw;
+   padding-bottom: 0.5rem;
  }
  i.fas.fa-utensils
  {
-     padding-right: 4vw;
+     padding-right: 1rem;
      
  }
  i.fas.fa-hands-helping
  {
-     padding-right: 2vw;
+     padding-right: 0.5rem;
  }
  a.contact
  {

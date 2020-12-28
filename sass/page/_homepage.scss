@@ -12,34 +12,34 @@
      background-color: #eaeaea;
      align-items: center;
  width: 100%;
- height: 13vw;}
+ height: 3rem;}
  .where
  {
-     margin-right: 14vw;
+     margin-right: 3rem;
  }
  i.fas.fa-map-marker-alt
  {
-   padding-right: 6vw; 
+   padding-right: 1rem; 
  }
  
  
  .description__title
  {
-     width: 57vw;
-     margin-left: 9vw;
-     font-size: 5.5vw;
+     width: 17rem;
+     margin-left: 5rem;
+     font-size: 1.7rem;
  }
  .description
  {
-     width: 80vw;
-     margin-left: 3vw;
+     width: 100%;
+     
      color: gray;
-     font-size: 4.5vw;
+     font-size: 1.5rem;
  }
  .exploration{
     
  background-color: #f6f6f6;
-     padding: 5vw 5vw 15vw 5vw;
+     padding: 1rem 1rem 3rem 1rem;
      text-align: center;
      }
  
@@ -49,13 +49,15 @@
  
  .stages {
   
-     margin-left: 9vw;}
+     margin-left: 3rem;
+    }
 
  .title
  { 
      margin-bottom: 0;
-     margin-top: 12vw;
-     margin-left: -3vw;}
+     margin-top: 2rem;
+     margin-left: -0.5rem;
+    }
  
  
  
@@ -64,36 +66,37 @@
    display: flex;
      align-items: center;
      background-color:$background-meal;
-     width: 75vw;
-     padding: 5vw;
-     border-radius: 3vw;
-     box-shadow: 0 2vw 3vw -1vw #00000045;
-     font-size: 4vw;  
+     width: 23rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     border-radius: 1rem;
+     box-shadow: 0 1rem 2rem -1rem #00000045;
+ font-size: 1.3rem;
  }
 
  .stage1:active,.stage2:active,.stage3:active{
-    background: {image: linear-gradient(to right,$color-tertiary,$color-secondary,$color-primary) ;}
-     box-shadow: 0 1vw 3vw  black;
+    background-color: #D2CAEC;
+     box-shadow: 0 1rem 2rem  black;
   }
  .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt
  {
-     padding-left: 4vw;
-     padding-right: 4vw; 
+     padding-left: 1rem;
+     padding-right: 1rem; 
      color: gray;
  }
  
  .numbers{
-     margin-left: -9vw;
-     margin-top: 0;
-     margin-bottom: 0;
-     color: white;
-     background-color:$color-primary;
-     border-radius: 100%;
-     width: 7vw;
-     height: 6vw;
-     display: flex;
-     justify-content: center;
-     padding-top: 1vw;
+    margin-left: -0.9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 2rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
  }
  
  
@@ -101,46 +104,46 @@
  
  h2.title__2__place
  {
-     margin-left: 8vw;
+     margin-left: 2rem;
      margin-bottom: 0;
-     margin-top: 1vw;
-     font-size: 6vw;
+     margin-top: 0;
+     font-size: 1.8;
  }
  .new
  {
      position: absolute;
-     right: 12vw;
+     right: 5rem;
      background-color:$color-tertiary;
      color: $color-text-new;
-     padding:2vw 2vw 2vw 2vw;
+     padding:1rem 1rem 1rem 1rem;
      border-radius: 5%;
  }
  .pictures
  {
-     width: 85vw;
-     height: 45vw;
-     border-radius: 6vw 6vw 0 0;
-     background-size: cover;
- }
+     width: 26rem;
+     height: 13rem;
+     border-radius: 1rem 1rem 0 0;
+    object-fit: cover;}
+ 
  
  .restaurants__choices
  {
      background-color:#F2F2F2;
-     height: 290vw;
-     margin-top: 20vw;
-     padding-top: 10vw;
-     padding-bottom: 15vw;}
+     height: 87rem;
+     margin-top: 4rem;
+     padding-top: 3rem;
+     }
      
     
  
  
  .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
-     margin-left: 7vw;
+     margin-left: 2rem;
      background-color: white;
-     border-radius: 6vw;
-     width: 85vw;
-     height: 62vw;
-     line-height: 2vw;
+     border-radius: 1rem;
+     width: 26rem;
+     height: 18rem;
+     line-height: 0.4rem;
     
  }
 
@@ -148,12 +151,13 @@
    .mention__place{
        display: flex;
        justify-content: space-between;
-       font-size: 4vw;
+       font-size: 1.2rem;
+       line-height: 1.8rem;
    }
    .title__restaurant
    {
-       margin-bottom: 4vw;
-       font-size: 4vw;
+       margin-bottom: 1rem;
+       font-size: 1.2rem;
    }
    a.link
    {
@@ -162,7 +166,7 @@
    }
    .text__position
    {
-       margin-left: 3vw;
+       margin-left: 1rem;
    }
  
   }

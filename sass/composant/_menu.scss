@@ -6,20 +6,22 @@
 .set__menu
 {   position: relative;
     background-color:$background-meal;
-    border-radius: 12vw 12vw 0 0;
-    margin-top: -15vw;
-    padding: 5vw;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -2rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
 
 }
 .choice1, .choice2, .choice3, .choice4{
 background: white;
-    border-radius: 2vw;
-    line-height: 0vw;
-margin-bottom: 5vw;}
+    border-radius: 1rem;
+    line-height: 0.9rem;
+    height: 5rem;
+margin-bottom: 1rem;}
 
 .detail
 {
-    margin-left: 4vw;
+    margin-left: 1rem;
 }
 .detail__name__description__price{
     display: flex;
@@ -27,6 +29,6 @@ margin-bottom: 5vw;}
     position: absolute;
     justify-content: flex-end;
     margin: 0;
-    right: 3vw;
-    top: 11vw;
+    right: 1rem;
+    top: 3rem;
 }

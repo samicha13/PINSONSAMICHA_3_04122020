@@ -51,19 +51,19 @@ transform-origin: bottom;
     i.fas.fa-check-circle{
         color: white;
         position: absolute;
-        font-size: 5vw;
+        font-size: 2rem;
         top: 50%;
         left: 50%;
-        margin: -2vw;}
+        margin: -1rem;
     
-    
+}
     i.fas.fa-check-circle:hover{
         color: white;
         position: absolute;
-        font-size: 5vw;
+        font-size: 2rem;
         top: 50%;
         left: 50%;
-        margin: -2vw;
+        margin: -1rem;
     }
     .choice1:hover i.fas.fa-check-circle{
         transform:             rotate( 360deg );            
@@ -115,25 +115,44 @@ transform-origin: bottom;
         -webkit-transition: -webkit-transform 0.5s linear;
     }
 
+    @media screen and (min-width:1024px){
+    i.fas.fa-check-circle{
+        font-size: 1rem;
+    top: 85%;
+    left: 60%;}
+
+    .check
+    {
+        width: 3rem;
+          background-color: $color-tertiary;
+    position: absolute;
+    color: #fff;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    height: 100%;
+    top: 0;
+    right: -5rem
+    }
+    }
 
 //*animation carré vert sur le côté au survol*//
 
-
+@media screen and (max-width:500px){
 .check {
    
     
     background-color: $color-tertiary;
     position: absolute;
     color: #fff;
-    border-radius: 0 2vw 2vw 0;
+    border-radius: 0 1rem 1rem 0;
     cursor: pointer;
     height: 100%;
-    width: 18vw;
+    width: 4rem;
     
     top: 0;
-    right: -20vw;}
+    right: -5rem;}
 
-
+}
 .choice1,.choice2,.choice3,.choice4{
     position: relative;
     overflow: hidden;}
@@ -164,20 +183,66 @@ transform-origin: bottom;
     }
 
     @keyframes mouvement1 {
-        from {right: -30vw;}
-        to {right: 0vw;}
+        from {right: -6rem;}
+        to {right: 0rem;}
     }
-    .choice1:hover > .detail{
+
+    .detail:hover  .detail__name__description__price{
         animation: mouvement2 0.3s linear;
-        animation-delay: 0s;
         animation-fill-mode: forwards;
     }
     @keyframes mouvement2 { 
-        from {right: 0;}
-        to {right: -30vw;}
+        from {right: 15px;}
+        to {right: 22%;}
+    }
+    .detail__name__description__price{
+        animation: mouvement3 0.4s forwards;
+        margin-right: 0.5rem;
+    }
+    @keyframes mouvement3 { 
+        from {right: 22%;}
+        to {right: 15px;}
     }
    
 
   
    //*----animation texte coupure----*//
   
+   .detail__name__description{
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    animation: textWidthTwo 0.5s linear;
+}
+@keyframes textWidthTwo {
+    0% {
+        width: 65%;
+    }
+    50% {
+        width: 85%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.detail:hover  .detail__name__description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 65%;
+    animation: textwidth 0.4s linear;
+}
+@keyframes textwidth {
+    0% {
+        width: 90%;
+    }
+    50% {
+        width: 75%;
+    }
+    100% {
+        width: 65%;
+    }  
+}
+

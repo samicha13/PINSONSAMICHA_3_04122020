@@ -2,7 +2,7 @@
 .stages {
   display: grid;
   grid-template-rows: repeat(4, 0fr);
-  grid-row-gap: 8vw;
+  grid-row-gap: 1.5rem;
   grid-template-areas: "a" "b" "c" "d";
 }
 
@@ -25,7 +25,7 @@
 .restaurants__choices {
   display: grid;
   grid-template-rows: repeat(5, 0fr);
-  row-gap: 5vw;
+  row-gap: 2rem;
   grid-template-areas: "a" "b" "c" "d" "e";
 }
 
@@ -72,7 +72,7 @@ p.detail__name__description__price {
   .stages {
     display: grid;
     grid-template-rows: repeat(1, 4fr);
-    grid-row-gap: 8vw;
+    grid-row-gap: 2rem;
     grid-template-areas: "a b c d";
   }
 
@@ -96,7 +96,7 @@ p.detail__name__description__price {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0vw;
-    column-gap: 1vw;
+    column-gap: 0.5rem;
     grid-template-areas: "a a a a" "b c d e";
   }
 
@@ -144,12 +144,57 @@ p.detail__name__description__price {
   .footer__service4 {
     grid-area: e;
   }
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-areas: "a b c";
+  }
+
+  .menu__choice1 {
+    grid-area: a;
+  }
+
+  .menu__choice2 {
+    grid-area: b;
+  }
+
+  .menu__choice3 {
+    grid-area: c;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1310px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 4rem;
+    grid-template-areas: "a b" "c c";
+  }
+
+  .menu__choice1 {
+    grid-area: a;
+    width: 20rem;
+  }
+
+  .menu__choice2 {
+    grid-area: b;
+    width: 20rem;
+  }
+
+  .menu__choice3 {
+    grid-area: c;
+    width: 20rem;
+    margin-left: 5rem;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 1023px) {
   .stages {
     display: grid;
     grid-template-rows: repeat(1, 4fr);
-    grid-row-gap: 3vw;
+    grid-row-gap: 1rem;
     grid-template-areas: "a" "b" "c" "d";
   }
 
@@ -172,8 +217,8 @@ p.detail__name__description__price {
   .restaurants__choices {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 5vw;
-    column-gap: 0vw;
+    row-gap: 2rem;
+    column-gap: 0;
     grid-template-areas: "a a" "b c" "d e";
   }
 
@@ -224,33 +269,33 @@ p.detail__name__description__price {
 }
 footer {
   background-color: #353535;
-  height: 50vw;
+  height: 15rem;
 }
 
 h3.title__footer {
   font-family: "Shrikhand";
-  padding-top: 7vw;
-  padding-bottom: 4vw;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   margin: 0 0 0 0;
   color: white;
 }
 
 .footer__content {
-  margin-left: 7vw;
+  margin-left: 2rem;
 }
 
 .footer__service1, .footer__service2, .footer__service3, .footer__service4 {
   color: white;
   font-weight: normal;
-  padding-bottom: 2vw;
+  padding-bottom: 0.5rem;
 }
 
 i.fas.fa-utensils {
-  padding-right: 4vw;
+  padding-right: 1rem;
 }
 
 i.fas.fa-hands-helping {
-  padding-right: 2vw;
+  padding-right: 0.5rem;
 }
 
 a.contact {
@@ -263,47 +308,46 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 9vw;
-  padding-top: 4vw;
-  padding-bottom: 3vw;
+  height: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
 .back {
   position: absolute;
-  left: 5vw;
-  top: 6vw;
+  left: 1rem;
+  top: 1.7rem;
 }
 
 .btn__exploration {
-  padding: 4vw 6vw 4vw 6vw;
-  border-radius: 6vw;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  border-radius: 2rem;
   color: #fff;
   border: none;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  box-shadow: 0 2vw 2vw -2vw #000;
+  box-shadow: 0 1rem 1rem -1rem #000;
   cursor: pointer;
-  margin-top: 2vw;
-  font-size: 4vw;
-  margin-right: 4vw;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .btn__order {
-  padding: 4vw 6vw 4vw 6vw;
-  border-radius: 6vw;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 2rem;
   color: #fff;
   border: none;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  box-shadow: 0 2vw 2vw -2vw #000;
+  box-shadow: 0 1rem 1rem -1rem #000;
   cursor: pointer;
-  margin-top: 2vw;
-  font-size: 5vw;
-  margin-left: 22vw;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-left: 7rem;
 }
 
 .btn__order:hover, .btn__exploration:hover {
   filter: brightness(1.2);
-  box-shadow: 0 1vw 3vw black;
+  box-shadow: 0 1rem 2rem black;
 }
 
 .menu__picture {
@@ -313,20 +357,22 @@ header {
 .set__menu {
   position: relative;
   background-color: #F6F6F6;
-  border-radius: 12vw 12vw 0 0;
-  margin-top: -15vw;
-  padding: 5vw;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -2rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .choice1, .choice2, .choice3, .choice4 {
   background: white;
-  border-radius: 2vw;
-  line-height: 0vw;
-  margin-bottom: 5vw;
+  border-radius: 1rem;
+  line-height: 0.9rem;
+  height: 5rem;
+  margin-bottom: 1rem;
 }
 
 .detail {
-  margin-left: 4vw;
+  margin-left: 1rem;
 }
 
 .detail__name__description__price {
@@ -335,18 +381,30 @@ header {
   position: absolute;
   justify-content: flex-end;
   margin: 0;
-  right: 3vw;
-  top: 11vw;
+  right: 1rem;
+  top: 3rem;
 }
 
 .name {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "shrikhand";
+  font-size: 1.5rem;
+  margin-left: -2rem;
 }
 
 p.detail__name {
   font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p.detail__name__description__price {
+  font-weight: bold;
+}
+
+i.far.fa-heart {
+  display: flex;
+  align-items: center;
 }
 
 .palette__du__gout {
@@ -354,7 +412,7 @@ p.detail__name {
 }
 
 .fa-heart {
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 .container {
@@ -440,19 +498,19 @@ p.detail__name {
 i.fas.fa-check-circle {
   color: white;
   position: absolute;
-  font-size: 5vw;
+  font-size: 2rem;
   top: 50%;
   left: 50%;
-  margin: -2vw;
+  margin: -1rem;
 }
 
 i.fas.fa-check-circle:hover {
   color: white;
   position: absolute;
-  font-size: 5vw;
+  font-size: 2rem;
   top: 50%;
   left: 50%;
-  margin: -2vw;
+  margin: -1rem;
 }
 
 .choice1:hover i.fas.fa-check-circle {
@@ -507,18 +565,38 @@ i.fas.fa-check-circle:hover {
   -webkit-transition: -webkit-transform 0.5s linear;
 }
 
-.check {
-  background-color: #99E2D0;
-  position: absolute;
-  color: #fff;
-  border-radius: 0 2vw 2vw 0;
-  cursor: pointer;
-  height: 100%;
-  width: 18vw;
-  top: 0;
-  right: -20vw;
-}
+@media screen and (min-width: 1024px) {
+  i.fas.fa-check-circle {
+    font-size: 1rem;
+    top: 85%;
+    left: 60%;
+  }
 
+  .check {
+    width: 3rem;
+    background-color: #99E2D0;
+    position: absolute;
+    color: #fff;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    height: 100%;
+    top: 0;
+    right: -5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .check {
+    background-color: #99E2D0;
+    position: absolute;
+    color: #fff;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    height: 100%;
+    width: 4rem;
+    top: 0;
+    right: -5rem;
+  }
+}
 .choice1, .choice2, .choice3, .choice4 {
   position: relative;
   overflow: hidden;
@@ -550,24 +628,75 @@ i.fas.fa-check-circle:hover {
 
 @keyframes mouvement1 {
   from {
-    right: -30vw;
+    right: -6rem;
   }
   to {
-    right: 0vw;
+    right: 0rem;
   }
 }
-.choice1:hover > .detail {
+.detail:hover .detail__name__description__price {
   animation: mouvement2 0.3s linear;
-  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 
 @keyframes mouvement2 {
   from {
-    right: 0;
+    right: 15px;
   }
   to {
-    right: -30vw;
+    right: 22%;
+  }
+}
+.detail__name__description__price {
+  animation: mouvement3 0.4s forwards;
+  margin-right: 0.5rem;
+}
+
+@keyframes mouvement3 {
+  from {
+    right: 22%;
+  }
+  to {
+    right: 15px;
+  }
+}
+.detail__name__description {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+  animation: textWidthTwo 0.5s linear;
+}
+
+@keyframes textWidthTwo {
+  0% {
+    width: 65%;
+  }
+  50% {
+    width: 85%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.detail:hover .detail__name__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+  animation: textwidth 0.4s linear;
+}
+
+@keyframes textwidth {
+  0% {
+    width: 90%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 65%;
   }
 }
 .menu h4::after {
@@ -783,6 +912,12 @@ h4 {
     text-decoration: none;
     color: white;
     margin: 0 0 0 0;
+  }
+
+  .btn__order {
+    margin-left: 33vw;
+    font-size: 3vw;
+    padding: 1vw 3vw 2vw 2vw;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1023px) {
@@ -1009,133 +1144,133 @@ body {
     background-color: #eaeaea;
     align-items: center;
     width: 100%;
-    height: 13vw;
+    height: 3rem;
   }
 
   .where {
-    margin-right: 14vw;
+    margin-right: 3rem;
   }
 
   i.fas.fa-map-marker-alt {
-    padding-right: 6vw;
+    padding-right: 1rem;
   }
 
   .description__title {
-    width: 57vw;
-    margin-left: 9vw;
-    font-size: 5.5vw;
+    width: 17rem;
+    margin-left: 5rem;
+    font-size: 1.7rem;
   }
 
   .description {
-    width: 80vw;
-    margin-left: 3vw;
+    width: 100%;
     color: gray;
-    font-size: 4.5vw;
+    font-size: 1.5rem;
   }
 
   .exploration {
     background-color: #f6f6f6;
-    padding: 5vw 5vw 15vw 5vw;
+    padding: 1rem 1rem 3rem 1rem;
     text-align: center;
   }
 
   /*----fonctionnement-----*/
   .stages {
-    margin-left: 9vw;
+    margin-left: 3rem;
   }
 
   .title {
     margin-bottom: 0;
-    margin-top: 12vw;
-    margin-left: -3vw;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
   }
 
   .stage1, .stage2, .stage3 {
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
-    width: 75vw;
-    padding: 5vw;
-    border-radius: 3vw;
-    box-shadow: 0 2vw 3vw -1vw #00000045;
-    font-size: 4vw;
+    width: 23rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem -1rem #00000045;
+    font-size: 1.3rem;
   }
 
   .stage1:active, .stage2:active, .stage3:active {
-    background-image: linear-gradient(to right, #99E2D0, #FF79DA, #9356DC);
-    box-shadow: 0 1vw 3vw black;
+    background-color: #D2CAEC;
+    box-shadow: 0 1rem 2rem black;
   }
 
   .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: gray;
   }
 
   .numbers {
-    margin-left: -9vw;
+    margin-left: -0.9rem;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
     background-color: #9356DC;
     border-radius: 100%;
-    width: 7vw;
-    height: 6vw;
+    width: 2rem;
+    height: 1.7rem;
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 0.5rem;
   }
 
   /*----restaurants----*/
   h2.title__2__place {
-    margin-left: 8vw;
+    margin-left: 2rem;
     margin-bottom: 0;
-    margin-top: 1vw;
-    font-size: 6vw;
+    margin-top: 0;
+    font-size: 1.8;
   }
 
   .new {
     position: absolute;
-    right: 12vw;
+    right: 5rem;
     background-color: #99E2D0;
     color: #008766;
-    padding: 2vw 2vw 2vw 2vw;
+    padding: 1rem 1rem 1rem 1rem;
     border-radius: 5%;
   }
 
   .pictures {
-    width: 85vw;
-    height: 45vw;
-    border-radius: 6vw 6vw 0 0;
-    background-size: cover;
+    width: 26rem;
+    height: 13rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
   }
 
   .restaurants__choices {
     background-color: #F2F2F2;
-    height: 290vw;
-    margin-top: 20vw;
-    padding-top: 10vw;
-    padding-bottom: 15vw;
+    height: 87rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
   }
 
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
-    margin-left: 7vw;
+    margin-left: 2rem;
     background-color: white;
-    border-radius: 6vw;
-    width: 85vw;
-    height: 62vw;
-    line-height: 2vw;
+    border-radius: 1rem;
+    width: 26rem;
+    height: 18rem;
+    line-height: 0.4rem;
   }
 
   .mention__place {
     display: flex;
     justify-content: space-between;
-    font-size: 4vw;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 
   .title__restaurant {
-    margin-bottom: 4vw;
-    font-size: 4vw;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
   a.link {
@@ -1144,7 +1279,7 @@ body {
   }
 
   .text__position {
-    margin-left: 3vw;
+    margin-left: 1rem;
   }
 }
 

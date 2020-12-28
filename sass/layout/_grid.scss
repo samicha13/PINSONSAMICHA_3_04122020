@@ -3,7 +3,7 @@
  .stages {
     display: grid;
     grid-template-rows: repeat(4,0fr);
-    grid-row-gap: 8vw;
+    grid-row-gap: 1.5rem;
 grid-template-areas: "a"
                      "b"
                      "c"
@@ -29,7 +29,7 @@ grid-template-areas: "a"
 {
     display: grid;
     grid-template-rows: repeat(5,0fr);
-       row-gap: 5vw;
+       row-gap: 2rem;
     grid-template-areas: "a"
                          "b"
                          "c"
@@ -87,7 +87,7 @@ p.detail__name__description__price
       .stages {
     display: grid;
     grid-template-rows: repeat(1,4fr);
-    grid-row-gap: 8vw;
+    grid-row-gap: 2rem;
 grid-template-areas: "a b c d";
 }
 .title
@@ -108,7 +108,7 @@ grid-template-areas: "a b c d";
     display: grid;
     grid-template-columns: repeat(4,1fr);
        row-gap: 0vw;
-       column-gap: 1vw;
+       column-gap: 0.5rem;
     grid-template-areas: "a a a a"
                          "b c d e";
 }
@@ -160,14 +160,81 @@ grid-template-areas: "a a a a"
 {
     grid-area: e;
 }
+//*---page restaurant version desktop--*//
 
+.menu
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+       row-gap: 1rem;
+       column-gap: 1rem;
+    grid-template-areas: "a b c";}
+
+
+.menu__choice1
+{
+    grid-area: a;
+}
+.menu__choice2{
+    grid-area: b;
+
+}
+
+.menu__choice3
+{
+    grid-area: c;
+    
+}
   }
+//*----breakpoint pour ne pas casser la lisibilité*//
+
+@media screen and (min-width:1025px) and (max-width:1310px)
+
+{
+    
+    .menu
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+           row-gap: 1rem;
+           column-gap: 4rem;
+        grid-template-areas: "a b"
+                             "c c";}
+    
+    
+    .menu__choice1
+    {
+        grid-area: a;
+        width: 20rem;
+    }
+    .menu__choice2{
+        grid-area: b;
+        width: 20rem;
+    
+    }
+    
+    .menu__choice3
+    {
+        grid-area: c;
+        width: 20rem;
+        margin-left: 5rem;
+    }
+
+
+
+}
+
+
+
+
+
+
   @media screen and (min-width:501px) and (max-width:1023px)
   {
     .stages {
         display: grid;
         grid-template-rows: repeat(1,4fr);
-        grid-row-gap: 3vw;
+        grid-row-gap: 1rem;
     grid-template-areas: "a"
                          "b"
                          "c" 
@@ -191,8 +258,8 @@ grid-template-areas: "a a a a"
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-       row-gap: 5vw;
-       column-gap: 0vw;
+       row-gap: 2rem;
+       column-gap: 0;
     grid-template-areas: "a a"
                          "b c"
                          "d e";
@@ -245,7 +312,6 @@ grid-template-areas: "a a"
 {
     grid-area: e;
 }
-
 
 
 
