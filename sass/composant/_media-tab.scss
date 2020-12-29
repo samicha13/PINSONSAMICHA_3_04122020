@@ -6,26 +6,26 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 9vw;
-     padding-top:0vw;
-     padding-bottom:0vw;
+     height: 5rem;
+     padding-top:0;
+     padding-bottom:0;
      width: 100%;
     }
 
     .place{
         background-color: #eaeaea;
         width: 100%;
-        height: 4vw;
+        height: 3rem;
     }
     .fa-map-marker-alt
     {
-        padding-right: 1vw;
+        padding-right: 1rem;
     }
 .where
 {
   display: flex;
   justify-content: center;
-  padding-top: 1vw;
+  padding-top: 1rem;
 }
 
 
@@ -33,8 +33,8 @@
 .exploration{
    
     background-color: #f6f6f6;
-    height: 0;
-        padding: 5vw 5vw 15vw 5vw;
+    height: 10rem;
+        padding: 2rem 1rem 1rem 1rem;
         text-align: center;
         display: grid;
         grid-template-areas: "a c"
@@ -45,26 +45,29 @@
     {
         grid-area: a;
         width: 100%;
-        font-size: 1.9vw;
+        font-size: 1rem;
+        margin:0;
     }
     
     .description
     {
         grid-area: b;
         width: 100%;
-       
+       margin: 0;
         color: gray;
-        font-size: 1.8vw;
+        font-size: 1rem;
+        padding-bottom: 2rem;
     }
     
     .btn__exploration{
         grid-area: c;
-        width: 23vw;
-        font-size: 1.8vw;
-        padding: 1vw 1vw 1vw 1vw;
+        height: 4rem;
+        width: 13rem;
+        font-size: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         margin-top: 0;
         margin-right: 0;
-        margin-left: 10vw;
+        margin-left: 0rem;
     }
     
 
@@ -75,7 +78,7 @@
     .title
     { 
         margin-bottom: 0;
-        margin-top: 5vw;
+        margin-top: 2rem;
         margin-left: 0;
     display: flex;
 justify-content: start;}
@@ -84,38 +87,40 @@ justify-content: start;}
     
     .stage1, .stage2, .stage3
     {
-      display: flex;
-        align-items: center;
-        background-color:$background-meal;
-        width: 60vw;
-        padding: 3vw;
-        border-radius: 3vw;
-        box-shadow: 0 2vw 3vw -1vw #00000045;
-        font-size: 3vw;  
+      
+        display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -1rem #00000045;
+    font-size: 1.2rem; 
+
     }
     .stage1:hover,.stage2:hover,.stage3:hover{
         background: {image: linear-gradient(to right,$color-tertiary,$color-secondary,$color-primary) ;}
-         box-shadow: 0 1vw 3vw  black;
+         box-shadow: 0 1rem 2rem  black;
       }
     .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt
     {
-        padding-left: 4vw;
-        padding-right: 4vw; 
+        padding-left: 1rem;
+        padding-right: 1rem; 
         color: gray;
     }
     
     .numbers{
-        margin-left: -6vw;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: white;
-        background-color:$color-primary;
-        border-radius: 100%;
-        width: 6vw;
-        height: 5vw;
-        display: flex;
-        justify-content: center;
-        padding-top: 1vw;
+        margin-left: -2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 2rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.4rem;
     }
     
     //*---restaurants--//*
@@ -124,43 +129,44 @@ justify-content: start;}
     {
        justify-content: center;
        display: flex;
-       margin-bottom: 0vw;
-       font-size: 3vw;
+       margin-bottom: 0;
+       font-size: 1.4rem;
    
     }
     .restaurants__choices{
         background-color: $background-meal;
-        margin-top:8vw;
-        padding-left: 5vw;
-        height: 90vw;
+        margin-top:3rem;
+        padding-left: 2rem;
+        height: 36rem;
        
     }
     .pictures
          {
-             width: 35vw;
-             height: 24vw;
-   border-radius: 1vw 1vw 0vw 0vw;
+             width: 100%;
+             height: 70%;
+   border-radius: 1rem 1rem 0 0;
    background-size: cover;
+   object-fit: cover;
              }
    
    
              .new
              {
                  position: absolute;
-                margin-left: 17vw;
+                margin-left: 22%;
                  background-color:$color-tertiary;
                  color: $color-text-new;
-                 padding:1vw 1vw 1vw 1vw;
+                 padding:0.5rem 0.5rem 0.5rem 0.5rem;
                  border-radius: 5%;
              }
    
              .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
-               margin-left: 0vw;
+               margin-left: 0;
                background-color: white;
-               border-radius: 1vw 1vw 1vw 1vw;
-               width: 35vw;
-               height: 32vw;
-               line-height: 2vw;
+               border-radius: 1rem 1rem 1rem 1rem;
+               width: 90%;
+               height: 13rem;
+               line-height: 1rem;
               
            }
    
@@ -176,13 +182,13 @@ justify-content: start;}
            .mention__place{
                display: flex;
                justify-content: space-between;
-               font-size: 2vw;
+               font-size: 1rem;
            }
            .title__restaurant
            {
-               margin-bottom: 0vw;
+               margin-bottom: 0;
                margin-top: 0;
-               font-size: 2vw;
+               font-size: 1.2rem;
            }
            a.link
            {
@@ -190,43 +196,43 @@ justify-content: start;}
                color: black;
            }
            .text__position
-           {margin-top: 1vw;
-               margin-left: 3vw;
-               line-height: 3vw;
+           {
+               margin-left: 1rem;
+               line-height: 1.5rem;
            }
          
 footer{
-    margin-top: 0vw;
-    height: 25vw;
+    margin-top: 0;
+    height: 10rem;
 }
 
 h3.title__footer
 {
     display: flex;
     justify-content: start;
-    padding-top:3vw;
-    padding-bottom: 2vw;
+    padding-top:1rem;
+    padding-bottom: 1rem;
 }
 
 i.fas.fa-utensils
  {
-     padding-right: 1vw;
+     padding-right: 1rem;
      
  }
  i.fas.fa-hands-helping
  {
-     padding-right: 1vw;
+     padding-right: 1rem;
  }
  a.contact
  {
      text-decoration: none;
      color:$color-text-footer;
-     margin-left: 3.2vw;
+     margin-left: 2rem;
      
  }
  .footer__service3
  {
-     margin-left: 2vw;
+     margin-left: 2rem;
  }
 
 }

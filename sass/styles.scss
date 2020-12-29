@@ -2,7 +2,8 @@
 @import "./utils/variables";
 @import "./layout/grid",
 "./layout/footer",
-"./layout/header";
+"./layout/header",
+"./layout/loader";
 @import"./composant/buttons",
 "./composant/menu",
 "./composant/namerestaurants",
@@ -10,7 +11,8 @@
 "./composant/animation",
 "./composant/courses",
 "./composant/media-desktop",
-"./composant/media-tab";
+"./composant/media-tab",
+"./composant/media-phone";
 
 @import"./base/typography";
 @import"./page/homepage";

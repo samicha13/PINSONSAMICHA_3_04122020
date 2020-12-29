@@ -320,6 +320,105 @@ header {
   top: 1.7rem;
 }
 
+.loading {
+  position: fixed;
+  background: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: load 3s forwards;
+  pointer-events: none;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+    /*1*/
+  }
+  80% {
+    opacity: 1;
+    /*1*/
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#content {
+  animation: apparait 3.5s forwards;
+}
+
+/*3.5*/
+@keyframes apparait {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.lettre {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #484848;
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 1rem #9356DC;
+  }
+  40% {
+    color: #FF79DA;
+    text-shadow: 0 0 1rem #FF79DA;
+  }
+  70% {
+    color: #99E2D0;
+    text-shadow: 0 0 1rem #99E2D0;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 1rem #9356DC;
+  }
+}
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
 .btn__exploration {
   padding: 1.2rem 2rem 1.2rem 2rem;
   border-radius: 2rem;
@@ -504,7 +603,7 @@ i.fas.fa-check-circle {
   margin: -1rem;
 }
 
-i.fas.fa-check-circle:hover {
+i.fas.fa-check-circle:active {
   color: white;
   position: absolute;
   font-size: 2rem;
@@ -716,33 +815,33 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9vw;
-    padding-top: 0vw;
-    padding-bottom: 0vw;
+    height: 6rem;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
   }
 
   .place {
     background-color: #eaeaea;
     width: 100%;
-    height: 4vw;
+    height: 3rem;
   }
 
   .fa-map-marker-alt {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   .where {
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 1rem;
   }
 
   /*--exploration---*/
   .exploration {
     background-color: #f6f6f6;
     height: 0;
-    padding: 5vw 5vw 15vw 5vw;
+    padding: 4rem 0rem 10rem 1rem;
     text-align: center;
     display: grid;
     grid-template-areas: "a c" "b c";
@@ -751,93 +850,96 @@ h4 {
   .description__title {
     grid-area: a;
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 
   .description {
     grid-area: b;
     width: 100%;
     color: gray;
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 
   .btn__exploration {
     grid-area: c;
-    width: 20vw;
-    font-size: 1.5vw;
-    padding: 1vw 1vw 1vw 1vw;
+    width: 15rem;
+    font-size: 1.2rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 0;
     margin-right: 0;
-    margin-left: 10vw;
+    margin-left: 2rem;
   }
 
   .stages {
-    margin-top: 4vw;
+    margin-top: 3rem;
   }
 
   .title {
-    font-size: 2vw;
+    font-size: 1.3rem;
     margin-bottom: 0;
     margin-top: 0;
-    margin-left: 1vw;
-    margin-top: 2vw;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 
   .stage1, .stage2, .stage3 {
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
-    width: 20vw;
-    height: 4vw;
-    padding: 1vw 1vw 1vw 1vw;
-    border-radius: 3vw;
-    box-shadow: 0 2vw 3vw -1vw #00000045;
-    font-size: 1.3vw;
+    width: 14rem;
+    height: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem -1rem #00000045;
+    font-size: 0.9rem;
   }
 
   .stage1:hover, .stage2:hover, .stage3:hover {
     background-image: linear-gradient(to right, #99E2D0, #FF79DA, #9356DC);
-    box-shadow: 0 1vw 3vw black;
+    box-shadow: 0 1rem 2rem black;
   }
 
   .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: gray;
   }
 
   .numbers {
-    margin-left: -2vw;
+    margin-left: -2rem;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
     background-color: #9356DC;
     border-radius: 100%;
-    width: 3vw;
-    height: 2vw;
+    width: 2.5rem;
+    height: 0.5rem;
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    align-items: center;
   }
 
   .title__2__place {
     justify-content: center;
     display: flex;
-    margin-bottom: 4vw;
-    font-size: 2.5vw;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
 
   .restaurants__choices {
     background-color: #F6F6F6;
-    margin-top: 3vw;
-    padding-left: 2vw;
-    height: 35vw;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    height: 23rem;
   }
 
   .pictures {
-    width: 20vw;
-    height: 16vw;
-    border-radius: 1vw 1vw 0vw 0vw;
+    width: 13rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     background-size: cover;
   }
 
@@ -853,10 +955,10 @@ h4 {
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
     margin-left: 0vw;
     background-color: white;
-    border-radius: 1vw 1vw 1vw 1vw;
-    width: 20vw;
-    height: 21vw;
-    line-height: 2vw;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 13rem;
+    height: 14rem;
+    line-height: 1.4rem;
   }
 
   .palette__du__gout:hover, .a__la__francaise:hover {
@@ -925,32 +1027,32 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9vw;
-    padding-top: 0vw;
-    padding-bottom: 0vw;
+    height: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
   }
 
   .place {
     background-color: #eaeaea;
     width: 100%;
-    height: 4vw;
+    height: 3rem;
   }
 
   .fa-map-marker-alt {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   .where {
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 1rem;
   }
 
   .exploration {
     background-color: #f6f6f6;
-    height: 0;
-    padding: 5vw 5vw 15vw 5vw;
+    height: 10rem;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
     display: grid;
     grid-template-areas: "a c" "b c";
@@ -959,24 +1061,28 @@ h4 {
   .description__title {
     grid-area: a;
     width: 100%;
-    font-size: 1.9vw;
+    font-size: 1rem;
+    margin: 0;
   }
 
   .description {
     grid-area: b;
     width: 100%;
+    margin: 0;
     color: gray;
-    font-size: 1.8vw;
+    font-size: 1rem;
+    padding-bottom: 2rem;
   }
 
   .btn__exploration {
     grid-area: c;
-    width: 23vw;
-    font-size: 1.8vw;
-    padding: 1vw 1vw 1vw 1vw;
+    height: 4rem;
+    width: 13rem;
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 0;
     margin-right: 0;
-    margin-left: 10vw;
+    margin-left: 0rem;
   }
 
   .stages {
@@ -985,7 +1091,7 @@ h4 {
 
   .title {
     margin-bottom: 0;
-    margin-top: 5vw;
+    margin-top: 2rem;
     margin-left: 0;
     display: flex;
     justify-content: start;
@@ -995,75 +1101,76 @@ h4 {
     display: flex;
     align-items: center;
     background-color: #F6F6F6;
-    width: 60vw;
-    padding: 3vw;
-    border-radius: 3vw;
-    box-shadow: 0 2vw 3vw -1vw #00000045;
-    font-size: 3vw;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -1rem #00000045;
+    font-size: 1.2rem;
   }
 
   .stage1:hover, .stage2:hover, .stage3:hover {
     background-image: linear-gradient(to right, #99E2D0, #FF79DA, #9356DC);
-    box-shadow: 0 1vw 3vw black;
+    box-shadow: 0 1rem 2rem black;
   }
 
   .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: gray;
   }
 
   .numbers {
-    margin-left: -6vw;
+    margin-left: -2rem;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
     background-color: #9356DC;
     border-radius: 100%;
-    width: 6vw;
-    height: 5vw;
+    width: 2rem;
+    height: 1.7rem;
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 0.4rem;
   }
 
   .title__2__place {
     justify-content: center;
     display: flex;
-    margin-bottom: 0vw;
-    font-size: 3vw;
+    margin-bottom: 0;
+    font-size: 1.4rem;
   }
 
   .restaurants__choices {
     background-color: #F6F6F6;
-    margin-top: 8vw;
-    padding-left: 5vw;
-    height: 90vw;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    height: 36rem;
   }
 
   .pictures {
-    width: 35vw;
-    height: 24vw;
-    border-radius: 1vw 1vw 0vw 0vw;
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem 1rem 0 0;
     background-size: cover;
+    object-fit: cover;
   }
 
   .new {
     position: absolute;
-    margin-left: 17vw;
+    margin-left: 22%;
     background-color: #99E2D0;
     color: #008766;
-    padding: 1vw 1vw 1vw 1vw;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 5%;
   }
 
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
-    margin-left: 0vw;
+    margin-left: 0;
     background-color: white;
-    border-radius: 1vw 1vw 1vw 1vw;
-    width: 35vw;
-    height: 32vw;
-    line-height: 2vw;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 90%;
+    height: 13rem;
+    line-height: 1rem;
   }
 
   .palette__du__gout:hover, .a__la__francaise:hover {
@@ -1077,13 +1184,13 @@ h4 {
   .mention__place {
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 1rem;
   }
 
   .title__restaurant {
-    margin-bottom: 0vw;
+    margin-bottom: 0;
     margin-top: 0;
-    font-size: 2vw;
+    font-size: 1.2rem;
   }
 
   a.link {
@@ -1092,39 +1199,374 @@ h4 {
   }
 
   .text__position {
-    margin-top: 1vw;
-    margin-left: 3vw;
-    line-height: 3vw;
+    margin-left: 1rem;
+    line-height: 1.5rem;
   }
 
   footer {
-    margin-top: 0vw;
-    height: 25vw;
+    margin-top: 0;
+    height: 10rem;
   }
 
   h3.title__footer {
     display: flex;
     justify-content: start;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   i.fas.fa-utensils {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   i.fas.fa-hands-helping {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   a.contact {
     text-decoration: none;
     color: white;
-    margin-left: 3.2vw;
+    margin-left: 2rem;
   }
 
   .footer__service3 {
-    margin-left: 2vw;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .description__title {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .place {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+  }
+
+  .where {
+    margin-right: 3rem;
+  }
+
+  i.fas.fa-map-marker-alt {
+    padding-right: 1rem;
+  }
+
+  .description {
+    width: 100%;
+    color: gray;
+    font-size: 1.5rem;
+  }
+
+  .exploration {
+    background-color: #f6f6f6;
+    padding: 1rem 1rem 3rem 1rem;
+    text-align: center;
+  }
+
+  /*fonctionnement*/
+  .stages {
+    width: 85%;
+    padding-left: 2rem;
+  }
+
+  .stage1, .stage2, .stage3 {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem -1rem #00000045;
+  }
+
+  .title {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+  }
+
+  .stage1:active, .stage2:active, .stage3:active {
+    background-color: #D2CAEC;
+    box-shadow: 0 1rem 2rem black;
+  }
+
+  .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: gray;
+  }
+
+  .numbers {
+    margin-left: -0.9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 2rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+
+  /*----restaurants----*/
+  h2.title__2__place {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.8;
+  }
+
+  .new {
+    position: absolute;
+    right: 3rem;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5%;
+  }
+
+  .pictures {
+    width: 16rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+  }
+
+  .restaurants__choices {
+    background-color: #F2F2F2;
+    height: 70rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    margin-left: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 14rem;
+    line-height: 0.4rem;
+  }
+
+  .mention__place {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+
+  .title__restaurant {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  a.link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .text__position {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 459px) {
+  .description__title {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .place {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+  }
+
+  .where {
+    margin-right: 3rem;
+  }
+
+  i.fas.fa-map-marker-alt {
+    padding-right: 1rem;
+  }
+
+  .description {
+    width: 100%;
+    color: gray;
+    font-size: 1.5rem;
+  }
+
+  .exploration {
+    background-color: #f6f6f6;
+    padding: 1rem 1rem 3rem 1rem;
+    text-align: center;
+  }
+
+  /*fonctionnement*/
+  .stages {
+    width: 85%;
+    padding-left: 2rem;
+  }
+
+  .stage1, .stage2, .stage3 {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem -1rem #00000045;
+  }
+
+  .title {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+  }
+
+  .stage1:active, .stage2:active, .stage3:active {
+    background-color: #D2CAEC;
+    box-shadow: 0 1rem 2rem black;
+  }
+
+  .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: gray;
+  }
+
+  .numbers {
+    margin-left: -0.9rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 2rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+  }
+
+  /*----restaurants----*/
+  h2.title__2__place {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.8;
+  }
+
+  .new {
+    position: absolute;
+    right: 2rem;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5%;
+  }
+
+  .pictures {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+  }
+
+  .restaurants__choices {
+    background-color: #F2F2F2;
+    height: 70rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    margin-left: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 14rem;
+    line-height: 0.4rem;
+  }
+
+  .mention__place {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+
+  .title__restaurant {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  a.link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .text__position {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .new {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .pictures {
+    width: 23rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    width: 23rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .new {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .pictures {
+    width: 21rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    width: 21rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 459px) {
+  .new {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .pictures {
+    width: 25rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    width: 25rem;
   }
 }
 body {
@@ -1133,7 +1575,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 460px) and (max-width: 500px) {
   .logo {
     width: 100%;
   }

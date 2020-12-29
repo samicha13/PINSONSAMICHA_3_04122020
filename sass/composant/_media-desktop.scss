@@ -8,26 +8,26 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 9vw;
-       padding-top:0vw;
-       padding-bottom:0vw;
+       height: 6rem;
+       padding-top:0;
+       padding-bottom:0;
        width: 100%;
       }
 
       .place{
           background-color: #eaeaea;
           width: 100%;
-          height: 4vw;
+          height: 3rem;
       }
       .fa-map-marker-alt
       {
-          padding-right: 1vw;
+          padding-right: 1rem;
       }
 .where
 {
     display: flex;
     justify-content: center;
-    padding-top: 1vw;
+    padding-top: 1rem;
 }
 
      
@@ -40,7 +40,7 @@
    
 background-color: #f6f6f6;
 height: 0;
-    padding: 5vw 5vw 15vw 5vw;
+    padding: 4rem 0rem 10rem 1rem;
     text-align: center;
     display: grid;
     grid-template-areas: "a c"
@@ -51,7 +51,7 @@ height: 0;
 {
     grid-area: a;
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 .description
@@ -60,31 +60,31 @@ height: 0;
     width: 100%;
    
     color: gray;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 .btn__exploration{
     grid-area: c;
-    width: 20vw;
-    font-size: 1.5vw;
-    padding: 1vw 1vw 1vw 1vw;
+    width: 15rem;
+    font-size: 1.2rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 0;
     margin-right: 0;
-    margin-left: 10vw;
+    margin-left: 2rem;
 }
 
 //----fonctionnement----//
 
 .stages{
-    margin-top: 4vw;
+    margin-top: 3rem;
 }
 
 .title
- {  font-size: 2vw;
+ {  font-size: 1.3rem;
      margin-bottom: 0;
      margin-top: 0;
-     margin-left: 1vw;
-    margin-top:2vw;}
+     margin-left: 1rem;
+    margin-top:1rem;}
  
  
  
@@ -93,36 +93,40 @@ height: 0;
    display: flex;
      align-items: center;
      background-color:$background-meal;
-     width: 20vw;
-     height: 4vw;
-     padding: 1vw 1vw 1vw 1vw;
-     border-radius: 3vw;
-     box-shadow: 0 2vw 3vw -1vw #00000045;
-     font-size: 1.3vw;  
+     width: 14rem;
+     height: 3rem;
+     padding: 1rem 1rem 1rem 1rem;
+     border-radius: 2rem;
+     box-shadow: 0 1rem 1rem -1rem #00000045;
+     font-size: 0.9rem;  
  }
  .stage1:hover,.stage2:hover,.stage3:hover{
    background: {image: linear-gradient(to right,$color-tertiary,$color-secondary,$color-primary) ;}
-    box-shadow: 0 1vw 3vw  black;
+    box-shadow: 0 1rem 2rem  black;
  }
  .fas.fa-list-ul, .fas.fa-store, .fas.fa-mobile-alt
  {
-     padding-left: 1vw;
-     padding-right: 1vw; 
+     padding-left: 1rem;
+     padding-right: 1rem; 
      color: gray;
  }
  
  .numbers{
-     margin-left: -2vw;
-     margin-top: 0;
-     margin-bottom: 0;
-     color: white;
-     background-color:$color-primary;
-     border-radius: 100%;
-     width: 3vw;
-     height: 2vw;
-     display: flex;
-     justify-content: center;
-     padding-top: 1vw;
+    margin-left: -2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    align-items: center;
+
  }
  
  //*---restaurants--*//
@@ -131,23 +135,24 @@ height: 0;
  {
     justify-content: center;
     display: flex;
-    margin-bottom: 4vw;
-    font-size: 2.5vw;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 
  }
  .restaurants__choices{
-     background-color: $background-meal;
-     margin-top:3vw;
-     padding-left: 2vw;
-     height: 35vw;
+    background-color: #F6F6F6;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    height: 23rem;
     
  }
  .pictures
       {
-          width: 20vw;
-          height: 16vw;
-border-radius: 1vw 1vw 0vw 0vw;
-background-size: cover;
+        width: 13rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-size: cover;
+
           }
 
 
@@ -163,11 +168,11 @@ background-size: cover;
 
           .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
             margin-left: 0vw;
-            background-color: white;
-            border-radius: 1vw 1vw 1vw 1vw;
-            width: 20vw;
-            height: 21vw;
-            line-height: 2vw;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 13rem;
+    height: 14rem;
+    line-height: 1.4rem;
            
         }
 
