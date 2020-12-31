@@ -104,12 +104,12 @@ h2.title__2__place
  margin-left: 2rem;
  margin-bottom: 0;
  margin-top: 0;
- font-size: 1.8;
+ font-size: 1.8rem;
 }
 .new
 {
  position: absolute;
- right: 3rem;
+ right: 1rem;
  background-color:$color-tertiary;
  color: $color-text-new;
  padding:1rem 1rem 1rem 1rem;
@@ -141,6 +141,7 @@ object-fit: cover;}
  width: 16rem;
  height: 14rem;
  line-height: 0.4rem;
+ position: relative;
 
 }
 
@@ -276,7 +277,7 @@ h2.title__2__place
  margin-left: 2rem;
  margin-bottom: 0;
  margin-top: 0;
- font-size: 1.8;
+ font-size: 1.8rem;
 }
 .new
 {
@@ -313,6 +314,7 @@ object-fit: cover;}
  width: 20rem;
  height: 14rem;
  line-height: 0.4rem;
+ position: relative;
 
 }
 
@@ -353,13 +355,14 @@ a.link
 }
 .pictures
 {
- width: 23rem;
+ width: 21rem;
 }
 
 
 .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
 
- width: 23rem;
+ width: 21rem;
+ position: relative;
  
 }
 
@@ -377,12 +380,13 @@ a.link
 }
 .pictures
 {
- width: 21rem;
+ width: 17rem;
  }
 
 .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
 
- width: 21rem;
+ width: 17rem;
+ position: relative;
 }
 
 }
@@ -405,6 +409,7 @@ a.link
 .palette__du__gout, .la__note__enchantee, .a__la__francaise,.le__delice{
 
  width: 25rem;
+ position: relative;
 }
 
 }

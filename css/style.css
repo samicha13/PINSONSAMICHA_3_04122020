@@ -66,6 +66,7 @@ p.detail__name__description {
 
 p.detail__name__description__price {
   grid-area: c;
+  margin-right: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -165,32 +166,33 @@ p.detail__name__description__price {
     grid-area: c;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1310px) {
+@media screen and (min-width: 1024px) and (max-width: 1310px) {
   .menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
-    column-gap: 4rem;
+    column-gap: 1rem;
     grid-template-areas: "a b" "c c";
   }
 
   .menu__choice1 {
     grid-area: a;
-    width: 20rem;
+    width: 27rem;
+    margin-left: 5rem;
   }
 
   .menu__choice2 {
     grid-area: b;
-    width: 20rem;
+    width: 27rem;
   }
 
   .menu__choice3 {
     grid-area: c;
-    width: 20rem;
+    width: 27rem;
     margin-left: 5rem;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 1023px) {
+@media screen and (min-width: 540px) and (max-width: 1023px) {
   .stages {
     display: grid;
     grid-template-rows: repeat(1, 4fr);
@@ -322,7 +324,6 @@ header {
 
 .loading {
   position: fixed;
-  background: absolute;
   width: 100%;
   height: 100%;
   display: flex;
@@ -441,7 +442,7 @@ header {
   cursor: pointer;
   margin-top: 2rem;
   font-size: 1.3rem;
-  margin-left: 7rem;
+  margin-left: 2rem;
 }
 
 .btn__order:hover, .btn__exploration:hover {
@@ -488,7 +489,7 @@ header {
   display: flex;
   justify-content: space-around;
   font-family: "shrikhand";
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: -2rem;
 }
 
@@ -548,6 +549,10 @@ i.far.fa-heart {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px white;
+}
+
+.container2 {
+  margin-top: 1.2rem;
 }
 
 /*-----animation chargement des menus---*/
@@ -664,15 +669,15 @@ i.fas.fa-check-circle:active {
   -webkit-transition: -webkit-transform 0.5s linear;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 501px) {
   i.fas.fa-check-circle {
-    font-size: 1rem;
-    top: 85%;
-    left: 60%;
+    font-size: 2rem;
+    top: 2.5rem;
+    left: 2.5rem;
   }
 
   .check {
-    width: 3rem;
+    width: 5rem;
     background-color: #99E2D0;
     position: absolute;
     color: #fff;
@@ -691,7 +696,7 @@ i.fas.fa-check-circle:active {
     border-radius: 0 1rem 1rem 0;
     cursor: pointer;
     height: 100%;
-    width: 4rem;
+    width: 5rem;
     top: 0;
     right: -5rem;
   }
@@ -748,7 +753,6 @@ i.fas.fa-check-circle:active {
 }
 .detail__name__description__price {
   animation: mouvement3 0.4s forwards;
-  margin-right: 0.5rem;
 }
 
 @keyframes mouvement3 {
@@ -937,18 +941,18 @@ h4 {
   }
 
   .pictures {
-    width: 13rem;
+    width: 14rem;
     height: 10rem;
-    border-radius: 1rem 1rem 1rem 1rem;
-    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
   }
 
   .new {
     position: absolute;
-    margin-left: 12vw;
+    right: 1rem;
     background-color: #99E2D0;
     color: #008766;
-    padding: 1vw 1vw 1vw 1vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5%;
   }
 
@@ -956,9 +960,10 @@ h4 {
     margin-left: 0vw;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
-    width: 13rem;
+    width: 14rem;
     height: 14rem;
     line-height: 1.4rem;
+    position: relative;
   }
 
   .palette__du__gout:hover, .a__la__francaise:hover {
@@ -972,13 +977,13 @@ h4 {
   .mention__place {
     display: flex;
     justify-content: space-between;
-    font-size: 1vw;
+    font-size: 1rem;
   }
 
   .title__restaurant {
-    margin-bottom: 0vw;
+    margin-bottom: 0;
     margin-top: 0;
-    font-size: 1vw;
+    font-size: 1rem;
   }
 
   a.link {
@@ -987,27 +992,27 @@ h4 {
   }
 
   .text__position {
-    margin-left: 3vw;
+    margin-left: 1rem;
   }
 
   footer {
     margin-top: 0;
-    height: 15vw;
+    height: 12rem;
   }
 
   h3.title__footer {
     display: flex;
     justify-content: start;
-    padding-top: 3vw;
-    padding-bottom: 2vw;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 
   i.fas.fa-utensils {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   i.fas.fa-hands-helping {
-    padding-right: 1vw;
+    padding-right: 1rem;
   }
 
   a.contact {
@@ -1017,12 +1022,208 @@ h4 {
   }
 
   .btn__order {
-    margin-left: 33vw;
-    font-size: 3vw;
-    padding: 1vw 3vw 2vw 2vw;
+    margin-left: 20rem;
+    font-size: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 1023px) {
+@media screen and (min-width: 1400px) {
+  .menu__picture {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .pictures {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    margin-left: 0vw;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 20rem;
+    height: 14rem;
+    line-height: 1.4rem;
+    position: relative;
+  }
+
+  i.fas.fa-check-circle {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: xx-large;
+  }
+
+  .check {
+    width: 5rem;
+  }
+
+  .btn__order {
+    margin-left: 45rem;
+  }
+}
+@media screen and (min-width: 1150px) and (max-width: 1399px) {
+  .pictures {
+    width: 17rem;
+    height: 10rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    margin-left: 0vw;
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    width: 17rem;
+    height: 14rem;
+    line-height: 1.4rem;
+    position: relative;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .place {
+    height: 5rem;
+  }
+
+  .where {
+    font-size: 2rem;
+    padding-top: 1.4rem;
+  }
+
+  .exploration {
+    height: 5rem;
+  }
+
+  .btn__exploration {
+    grid-area: c;
+    width: 28rem;
+    font-size: 2.2rem;
+    height: 8rem;
+  }
+
+  .description__title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .numbers {
+    width: 3.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .stages {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  .stage1, .stage2, .stage3 {
+    width: 30rem;
+    font-size: 2rem;
+    height: 5rem;
+  }
+
+  i.far.fa-heart {
+    font-size: 2rem;
+  }
+
+  .new {
+    font-size: 2rem;
+  }
+
+  .pictures {
+    width: 33rem;
+    height: 20rem;
+  }
+
+  .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
+    width: 33rem;
+    height: 26rem;
+    line-height: 2.4rem;
+  }
+
+  .restaurants__choices {
+    height: 45rem;
+  }
+
+  .title__2__place {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .title__restaurant {
+    font-size: 2.2rem;
+  }
+
+  .mention__place {
+    font-size: 2rem;
+  }
+
+  h3.title__footer {
+    font-size: 3rem;
+  }
+
+  .footer__service1, .footer__service2, .footer__service3, .footer__service4 {
+    font-size: 2rem;
+  }
+
+  footer {
+    height: 18rem;
+  }
+
+  /*pages resto*/
+  .menu__picture {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .choice1, .choice2, .choice3, .choice4 {
+    height: 7rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+
+  p.detail__name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p.detail__name__description {
+    font-size: 1.5rem;
+  }
+
+  .detail__name__description__price {
+    font-size: 1.8rem;
+  }
+
+  .check {
+    width: 5rem;
+  }
+
+  i.fas.fa-check-circle {
+    top: 3.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .btn__order {
+    margin-left: 70rem;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1023px) {
   header {
     display: flex;
     justify-content: center;
@@ -1157,7 +1358,7 @@ h4 {
 
   .new {
     position: absolute;
-    margin-left: 22%;
+    right: 1rem;
     background-color: #99E2D0;
     color: #008766;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -1171,6 +1372,7 @@ h4 {
     width: 90%;
     height: 13rem;
     line-height: 1rem;
+    position: relative;
   }
 
   .palette__du__gout:hover, .a__la__francaise:hover {
@@ -1325,12 +1527,12 @@ h4 {
     margin-left: 2rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.8;
+    font-size: 1.8rem;
   }
 
   .new {
     position: absolute;
-    right: 3rem;
+    right: 1rem;
     background-color: #99E2D0;
     color: #008766;
     padding: 1rem 1rem 1rem 1rem;
@@ -1358,6 +1560,7 @@ h4 {
     width: 16rem;
     height: 14rem;
     line-height: 0.4rem;
+    position: relative;
   }
 
   .mention__place {
@@ -1472,7 +1675,7 @@ h4 {
     margin-left: 2rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.8;
+    font-size: 1.8rem;
   }
 
   .new {
@@ -1505,6 +1708,7 @@ h4 {
     width: 20rem;
     height: 14rem;
     line-height: 0.4rem;
+    position: relative;
   }
 
   .mention__place {
@@ -1534,11 +1738,12 @@ h4 {
   }
 
   .pictures {
-    width: 23rem;
+    width: 21rem;
   }
 
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
-    width: 23rem;
+    width: 21rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
@@ -1548,11 +1753,12 @@ h4 {
   }
 
   .pictures {
-    width: 21rem;
+    width: 17rem;
   }
 
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
-    width: 21rem;
+    width: 17rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 459px) {
@@ -1567,6 +1773,7 @@ h4 {
 
   .palette__du__gout, .la__note__enchantee, .a__la__francaise, .le__delice {
     width: 25rem;
+    position: relative;
   }
 }
 body {
@@ -1575,7 +1782,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 460px) and (max-width: 500px) {
+@media screen and (min-width: 460px) and (max-width: 539px) {
   .logo {
     width: 100%;
   }
@@ -1668,12 +1875,12 @@ body {
     margin-left: 2rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 1.8;
+    font-size: 1.8rem;
   }
 
   .new {
     position: absolute;
-    right: 5rem;
+    right: 1rem;
     background-color: #99E2D0;
     color: #008766;
     padding: 1rem 1rem 1rem 1rem;
@@ -1681,7 +1888,7 @@ body {
   }
 
   .pictures {
-    width: 26rem;
+    width: 27rem;
     height: 13rem;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
@@ -1698,9 +1905,10 @@ body {
     margin-left: 2rem;
     background-color: white;
     border-radius: 1rem;
-    width: 26rem;
+    width: 27rem;
     height: 18rem;
     line-height: 0.4rem;
+    position: relative;
   }
 
   .mention__place {
@@ -1723,6 +1931,9 @@ body {
   .text__position {
     margin-left: 1rem;
   }
+}
+h5 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

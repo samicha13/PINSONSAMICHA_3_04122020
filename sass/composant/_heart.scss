@@ -28,6 +28,7 @@
     z-index:-1;
     background: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
     opacity:0;
     transform: scale(0);
@@ -47,3 +48,9 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0px white;
   }
+
+
+ .container2
+ {
+   margin-top: 1.2rem;
+ }

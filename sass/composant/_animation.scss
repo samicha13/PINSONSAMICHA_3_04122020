@@ -115,15 +115,15 @@ transform-origin: bottom;
         -webkit-transition: -webkit-transform 0.5s linear;
     }
 
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:501px){
     i.fas.fa-check-circle{
-        font-size: 1rem;
-    top: 85%;
-    left: 60%;}
+        font-size: 2rem;
+        top: 2.5rem;
+        left: 2.5rem;}
 
     .check
     {
-        width: 3rem;
+        width: 5rem;
           background-color: $color-tertiary;
     position: absolute;
     color: #fff;
@@ -147,7 +147,7 @@ transform-origin: bottom;
     border-radius: 0 1rem 1rem 0;
     cursor: pointer;
     height: 100%;
-    width: 4rem;
+    width: 5rem;
     
     top: 0;
     right: -5rem;}
@@ -197,7 +197,7 @@ transform-origin: bottom;
     }
     .detail__name__description__price{
         animation: mouvement3 0.4s forwards;
-        margin-right: 0.5rem;
+    
     }
     @keyframes mouvement3 { 
         from {right: 22%;}
