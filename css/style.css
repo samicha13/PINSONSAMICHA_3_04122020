@@ -442,7 +442,7 @@ header {
   cursor: pointer;
   margin-top: 2rem;
   font-size: 1.3rem;
-  margin-left: 2rem;
+  margin-left: 7rem;
 }
 
 .btn__order:hover, .btn__exploration:hover {
@@ -738,7 +738,22 @@ i.fas.fa-check-circle:active {
     right: 0rem;
   }
 }
-.detail:hover .detail__name__description__price {
+.choice1:hover .detail__name__description__price {
+  animation: mouvement2 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.choice2:hover .detail__name__description__price {
+  animation: mouvement2 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.choice3:hover .detail__name__description__price {
+  animation: mouvement2 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.choice4:hover .detail__name__description__price {
   animation: mouvement2 0.3s linear;
   animation-fill-mode: forwards;
 }
@@ -783,7 +798,31 @@ i.fas.fa-check-circle:active {
     width: 90%;
   }
 }
-.detail:hover .detail__name__description {
+.choice1:hover .detail__name__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+  animation: textwidth 0.4s linear;
+}
+
+.choice2:hover .detail__name__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+  animation: textwidth 0.4s linear;
+}
+
+.choice3:hover .detail__name__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+  animation: textwidth 0.4s linear;
+}
+
+.choice4:hover .detail__name__description {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -1023,8 +1062,9 @@ h4 {
 
   .btn__order {
     margin-left: 20rem;
-    font-size: 2rem;
-    padding: 1rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
 }
 @media screen and (min-width: 1400px) {

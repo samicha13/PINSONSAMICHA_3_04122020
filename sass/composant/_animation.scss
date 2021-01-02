@@ -187,7 +187,20 @@ transform-origin: bottom;
         to {right: 0rem;}
     }
 
-    .detail:hover  .detail__name__description__price{
+    .choice1:hover  .detail__name__description__price{
+        animation: mouvement2 0.3s linear;
+        animation-fill-mode: forwards;
+    }
+
+    .choice2:hover  .detail__name__description__price{
+        animation: mouvement2 0.3s linear;
+        animation-fill-mode: forwards;
+    }
+    .choice3:hover  .detail__name__description__price{
+        animation: mouvement2 0.3s linear;
+        animation-fill-mode: forwards;
+    }
+    .choice4:hover  .detail__name__description__price{
         animation: mouvement2 0.3s linear;
         animation-fill-mode: forwards;
     }
@@ -226,8 +239,31 @@ transform-origin: bottom;
     100%{
         width: 90%;
     }
+    
 }
-.detail:hover  .detail__name__description{
+.choice1:hover  .detail__name__description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 65%;
+    animation: textwidth 0.4s linear;
+}
+.choice2:hover  .detail__name__description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 65%;
+    animation: textwidth 0.4s linear;
+}
+
+.choice3:hover  .detail__name__description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 65%;
+    animation: textwidth 0.4s linear;
+}
+.choice4:hover  .detail__name__description{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
