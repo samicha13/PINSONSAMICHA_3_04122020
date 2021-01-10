@@ -591,11 +591,11 @@ i.far.fa-heart {
 @keyframes plats-progress {
   from {
     opacity: 0;
-    transform: translateY(10vw);
+    transform: translateY(3rem);
   }
   to {
     opacity: 1;
-    transform: translateY(0vw);
+    transform: translateY(0);
   }
 }
 /*-------------animation plat---------*/
@@ -767,7 +767,7 @@ i.fas.fa-check-circle:active {
   }
 }
 .detail__name__description__price {
-  animation: mouvement3 0.4s forwards;
+  animation: mouvement3 0.3s forwards;
 }
 
 @keyframes mouvement3 {
@@ -780,24 +780,9 @@ i.fas.fa-check-circle:active {
 }
 .detail__name__description {
   margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   width: 90%;
-  animation: textWidthTwo 0.5s linear;
 }
 
-@keyframes textWidthTwo {
-  0% {
-    width: 65%;
-  }
-  50% {
-    width: 85%;
-  }
-  100% {
-    width: 90%;
-  }
-}
 .choice1:hover .detail__name__description {
   text-overflow: ellipsis;
   overflow: hidden;
